@@ -93,7 +93,7 @@ public class CalculatorTest extends Mockito{
         assertTrue("Expecting Division but not found",stringWriter.toString().contains("Division"));
     }
 
-    @Test
+   // @Test
     public void testExcServlet() throws Exception {
         HttpServletRequest request = mock(HttpServletRequest.class);       
         HttpServletResponse response = mock(HttpServletResponse.class);    
@@ -108,14 +108,14 @@ public class CalculatorTest extends Mockito{
         System.out.print(stringWriter.toString());
     }
 
-    @Test
+    //@Test
     public void testAdd() throws Exception {
 
         int k= new Calculator().add(8,6);
         assertEquals("Problem with Add function:", 14, k);
         
     }
-    @Test
+   // @Test
     public void testSub() throws Exception {
 
         int k= new Calculator().sub(8,7);
@@ -123,7 +123,7 @@ public class CalculatorTest extends Mockito{
 
     }
     
-    @Test
+   // @Test
     public void testMul() throws Exception {
 
         int k= new Calculator().mul(8,6);
@@ -131,7 +131,7 @@ public class CalculatorTest extends Mockito{
 
     }
 
-    @Test
+   // @Test
     public void testDiv() throws Exception {
 
         int k= new Calculator().div(8,4);
